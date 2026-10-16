@@ -375,102 +375,17 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // -------------------------------------------------------------------------
-  // 18. Adventure Mode: Lynx Mascot Walking & Seamless Auto-Skin Controller
+  // 18. Adventure Mode: Interactive Chest (Grant XP on click)
   // -------------------------------------------------------------------------
-  const walker = document.getElementById("advbWalker");
-  const lynxImg = document.getElementById("advbLynxImg");
-  const lynxContainer = document.getElementById("advbLynxContainer");
   const chest = document.getElementById("advbChest");
-
-  if (walker && lynxImg) {
-    const lynxSkins = [
-      { id: "dino", src: "assets/lynx_dino.png" },
-      { id: "ninja", src: "assets/lynx_ninja.png" },
-      { id: "pizza", src: "assets/lynx_pizza.png" },
-      { id: "duck", src: "assets/lynx_duck.webp" },
-      { id: "default", src: "assets/lynx_default.png" }
-    ];
-
-    let currentSkinIndex = 0;
-    let isFading = false;
-    let isHovered = false;
-
-    // Seamless fade-in / fade-out skin switch
-    function switchSkinSeamless(newIndex) {
-      if (isFading) return;
-      isFading = true;
-      currentSkinIndex = newIndex;
-
-      // Soft fade out
-      lynxImg.classList.add("skin-fade");
-
-      setTimeout(() => {
-        // Swap image source
-        lynxImg.src = lynxSkins[currentSkinIndex].src;
-        // Soft fade back in
-        setTimeout(() => {
-          lynxImg.classList.remove("skin-fade");
-          isFading = false;
-        }, 50);
-      }, 200);
-    }
-
-    // Automatic seamless skin rotation every 6 seconds
-    setInterval(() => {
-      const nextIndex = (currentSkinIndex + 1) % lynxSkins.length;
-      switchSkinSeamless(nextIndex);
-    }, 6000);
-
-    // Clicking Lynx directly also seamlessly triggers the next skin
-    if (lynxContainer) {
-      lynxContainer.addEventListener("click", function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-        const nextIndex = (currentSkinIndex + 1) % lynxSkins.length;
-        switchSkinSeamless(nextIndex);
-      });
-    }
-
-    // Smooth walking patrol back and forth (left & right)
-    let posX = 0;
-    let direction = 1; // 1 = walking right, -1 = walking left
-    const minX = -120; // left bound (near wooden adventure sign)
-    const maxX = 160;  // right bound (near treeline)
-    const speed = 0.55;
-
-    walker.addEventListener("mouseenter", () => { isHovered = true; });
-    walker.addEventListener("mouseleave", () => { isHovered = false; });
-
-    function animateWalker() {
-      if (!isHovered) {
-        posX += direction * speed;
-
-        if (posX >= maxX && direction === 1) {
-          direction = -1;
-          // Flip sprite horizontally when walking left
-          lynxImg.style.transform = "scaleX(-1)";
-        } else if (posX <= minX && direction === -1) {
-          direction = 1;
-          // Face right when walking right
-          lynxImg.style.transform = "scaleX(1)";
-        }
-
-        walker.style.transform = `translateX(${posX}px)`;
+  if (chest) {
+    chest.addEventListener("click", function () {
+      const xpElement = document.querySelector(".advb-stat b");
+      if (xpElement) {
+        let curr = parseInt(xpElement.textContent, 10) || 0;
+        xpElement.textContent = curr + 50;
       }
-      requestAnimationFrame(animateWalker);
-    }
-    requestAnimationFrame(animateWalker);
-
-    // Interactive Chest: open & grant XP
-    if (chest) {
-      chest.addEventListener("click", function () {
-        const xpElement = document.querySelector(".advb-stat b");
-        if (xpElement) {
-          let curr = parseInt(xpElement.textContent, 10) || 0;
-          xpElement.textContent = curr + 50;
-        }
-      });
-    }
+    });
   }
 });
 

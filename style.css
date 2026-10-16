@@ -1959,44 +1959,42 @@ body.darktheme .advb-mist {
 }
 
 /* =========================================================
-   THE WALKER (LYNX MASCOT + SPEECH BUBBLE)
+   THE WALKER
+   The lynx walks the road carrying the bubble. Slow and
+   short so the link stays easy to hit, paused on hover, off
+   entirely on reduced motion.
    ========================================================= */
+
 .advb-walk {
   position: absolute;
   z-index: 9;
   bottom: 50px;
-  left: 53%;
+  left: 56%;
+
   display: flex;
   align-items: center;
   gap: 12px;
+
   pointer-events: auto;
-  transition: transform 0.1s linear;
+
+  animation: advbWalk 13s ease-in-out infinite alternate;
 }
 
-.advb-walk:hover {
-  cursor: pointer;
-}
+.advb-walk:hover { animation-play-state: paused; }
 
-.advb-lynx-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  user-select: none;
-  cursor: pointer;
+@keyframes advbWalk {
+  from { transform: translateX(0); }
+  to   { transform: translateX(74px); }
 }
 
 .advb-lynx {
   display: block;
-  width: 80px;
+  width: 84px;
   height: auto;
-  image-rendering: pixelated;
-  animation: advbBob .62s steps(2, end) infinite;
-  transition: opacity 0.22s ease-in-out, filter 0.15s ease;
-}
 
-.advb-lynx.skin-fade {
-  opacity: 0.15;
+  image-rendering: pixelated;
+
+  animation: advbBob .62s steps(2, end) infinite;
 }
 
 @keyframes advbBob {
@@ -2004,36 +2002,32 @@ body.darktheme .advb-mist {
   to   { transform: translateY(-3px); }
 }
 
-.advb-lynx-container:hover .advb-lynx {
-  filter: drop-shadow(0 0 6px rgba(255, 215, 0, 0.65));
-}
-
-/* Speech Bubble */
 .advb-bubble {
   position: relative;
-  display: inline-block;
-  min-width: 202px;
-  padding: 11px 14px;
+  display: block;
+
+  width: 202px;
+  padding: 12px 13px;
+
   background: #fff;
   border: 3px solid #2b2016;
   box-shadow: 4px 4px 0 rgba(43,32,22,.32);
+
   color: #2b2016 !important;
-  font-family: "Courier New", Courier, monospace;
+
+  font-family: "Courier New", monospace;
   font-size: 13px;
-  line-height: 1.35;
+  line-height: 1.4;
   font-weight: 700;
   text-align: center;
   text-decoration: none !important;
-  transition: background-color .15s ease, transform .15s ease;
-  white-space: nowrap;
+
+  transition: background-color .15s ease;
 }
 
-.advb-bubble:hover {
-  background: #FFF4A3;
-  transform: translateY(-1px);
-}
+.advb-bubble:hover { background: #FFF4A3; }
 
-/* Bubble Tail */
+/* tail: dark diamond behind, white diamond over the border */
 .advb-bubble::before,
 .advb-bubble::after {
   content: "";
@@ -2053,13 +2047,11 @@ body.darktheme .advb-mist {
   margin-top: -9px;
   background-color: #fff;
 }
-.advb-bubble:hover::after {
-  background-color: #FFF4A3;
-}
+.advb-bubble:hover::after { background-color: #FFF4A3; }
 
 .advb-bubble i {
   font-style: normal;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1;
   margin-left: 5px;
 }
@@ -2256,26 +2248,48 @@ body.darktheme .advb-text {
 
 /* Responsive queries */
 @media (max-width: 992px) {
-  .advb { height: 330px; }
+  .advb { height: 320px; }
   .advb-inner { padding: 18px 20px; }
   .advb-sign { display: none; }
-  .advb-right { padding-left: 28px; }
-  .advb-card { width: 200px; padding: 12px 12px 14px; }
-  .advb-badge { height: 36px; }
-  .advb-walk { left: 45%; bottom: 44px; }
-  .advb-lynx { width: 70px; }
-  .advb-bubble { min-width: 170px; font-size: 12px; padding: 8px 10px; }
+  .advb-right { padding-left: 34px; padding-top: 13px; }
+  .advb-card { width: 216px; padding: 13px 14px 15px; }
+  .advb-card .advb-title { font-size: 18px; }
+  .advb-kicker { font-size: 11px; letter-spacing: 2.2px; }
+  .advb-text { font-size: 13px; max-width: 250px; }
+  .advb-badge { height: 34px; }
+  .advb-badges { gap: 10px; }
+  .advb-walk { left: 46%; bottom: 46px; }
+  .advb-lynx { width: 74px; }
+  .advb-bubble { width: 178px; font-size: 12px; }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  .advb-badge-browser { display: none; }
+  .advb-walk { bottom: 42px; }
+  .advb-right .advb-title { font-size: 20px; }
 }
 
 @media (max-width: 600px) {
-  .advb { height: auto; min-height: 480px; }
-  .advb-inner { display: block; padding: 16px 16px 180px; }
+  .advb { height: auto; min-height: 330px; }
+  .advb-inner { display: block; padding: 22px 20px 176px; }
   .advb-right { padding-left: 0; padding-top: 14px; }
   .advb-t-wide { display: none; }
   .advb-t-narrow { display: inline; }
   .advb-badge-browser { display: none; }
-  .advb-walk { left: 16px; bottom: 50px; }
+  .advb-walk { left: 16px; bottom: 60px; }
+  .advb-lynx { width: 78px; }
+  .advb-bubble { width: 188px; font-size: 12.5px; }
   .advb-chest { right: 10px; bottom: 10px; }
+
+  @keyframes advbWalk {
+    from { transform: translateX(0); }
+    to   { transform: translateX(44px); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .advb-walk,
+  .advb-lynx { animation: none !important; }
 }
 
 /* ==========================================================================

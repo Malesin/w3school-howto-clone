@@ -10,21 +10,16 @@
 </head>
 <body>
 
-  <!-- =========================================================================
-       1. TOP NAVIGATION BAR (#top-nav-bar)
-       ========================================================================= -->
   <header id="top-nav-bar">
     <div class="tnb-left">
       <button class="tnb-mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
         <i class="fa fa-bars"></i>
       </button>
 
-      <!-- W3Schools Official Logo -->
       <a href="https://www.w3schools.com" class="tnb-logo" title="W3Schools Home">
         <img src="assets/w3schools_logo.webp" alt="W3Schools" class="tnb-logo-img">
       </a>
 
-      <!-- Desktop Nav Items -->
       <nav class="tnb-nav-items">
         <div class="tnb-nav-btn">Tutorials <i class="fa fa-caret-down"></i></div>
         <div class="tnb-nav-btn">References <i class="fa fa-caret-down"></i></div>
@@ -32,7 +27,6 @@
         <div class="tnb-nav-btn">Certificates <i class="fa fa-caret-down"></i></div>
       </nav>
 
-      <!-- Search Box -->
       <div class="tnb-search-wrap">
         <input type="text" class="tnb-search-input" placeholder="Search..." aria-label="Search">
         <button class="tnb-search-btn" aria-label="Submit search">
@@ -43,12 +37,10 @@
       <div class="tnb-more-dots" title="More services">&#8942;</div>
     </div>
 
-    <!-- Right Side Actions -->
     <div class="tnb-right">
       <a href="https://www.w3schools.com/spaces/index.php" class="tnb-text-link">Spaces</a>
       <a href="https://order.w3schools.com/plans" class="tnb-text-link">Upgrade</a>
 
-      <!-- Adventure Lynx Mascot App Badge -->
       <a href="https://www.w3schools.com/adventure/index.php" class="tnb-adventure-badge" target="_blank">
         <span class="badge-new">NEW</span>
         <img src="https://www.w3schools.com/adventure/img/mascot-lynx.png" alt="Lynx Mascot">
@@ -58,19 +50,14 @@
         </div>
       </a>
 
-      <!-- Purple Paid Courses Button -->
       <a href="https://campus.w3schools.com/collections/course-catalog" class="tnb-btn-paid" target="_blank">
         Paid Courses
       </a>
 
-      <!-- Green Sign In Button -->
       <button class="tnb-btn-signin" onclick="openLoginModal()">Sign In</button>
     </div>
   </header>
 
-  <!-- =========================================================================
-       2. SUB TOP NAVIGATION BAR (#subtopnav)
-       ========================================================================= -->
   <div id="subtopnav-container">
     <div id="subtopnav">
       <a href="https://www.w3schools.com/html/default.asp">HTML</a>
@@ -100,9 +87,6 @@
     </div>
   </div>
 
-  <!-- =========================================================================
-       3. SIDEBAR NAVIGATION (#sidenav)
-       ========================================================================= -->
   <aside id="sidenav">
     <div class="sidenav-search-wrap">
       <input type="text" id="sidenavFilter" class="sidenav-search-input" placeholder="Search..." aria-label="Search filter">
@@ -149,15 +133,10 @@
     </ul>
   </aside>
 
-  <!-- =========================================================================
-       4. PAGE CONTENT & RIGHT SKYSCRAPER BANNER
-       ========================================================================= -->
   <div class="page-layout-wrapper">
-    
-    <!-- Central Content Area -->
+
     <main class="main-column">
 
-      <!-- Header row with title & SHARE buttons -->
       <div class="main-header-row">
         <h1 class="main-title">W3Schools How To</h1>
         <div class="share-top-btn">
@@ -169,7 +148,6 @@
         </div>
       </div>
 
-      <!-- Pagination Row -->
       <div class="pagination-row">
         <span class="pagination-item">&lsaquo;</span>
         <span class="pagination-item active">1</span>
@@ -185,9 +163,6 @@
 
       <p class="main-subtitle">Code snippets for HTML, CSS and JavaScript.</p>
 
-      <!-- -------------------------------------------------------------------
-           1. Slideshow Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardSlideshow">
         <h2 class="card-header-title">Slideshow</h2>
         <div class="card-content-area">
@@ -214,9 +189,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           2. Login Form Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardLoginForm">
         <h2 class="card-header-title">Login Form</h2>
         <div class="card-content-area">
@@ -227,7 +199,6 @@
         </div>
       </div>
 
-      <!-- Modal Window for Login -->
       <div id="loginModal" class="modal" style="display: none;">
         <div class="modal-content">
           <div class="modal-header-img">
@@ -249,9 +220,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           3. Accordion Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardAccordion">
         <h2 class="card-header-title">Accordion</h2>
         <div class="card-content-area">
@@ -284,9 +252,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           4. Hover Dropdowns Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardHoverDropdown">
         <h2 class="card-header-title">Hover Dropdowns</h2>
         <div class="card-content-area">
@@ -304,9 +269,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           5. Click Dropdowns Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardClickDropdown">
         <h2 class="card-header-title">Click Dropdowns</h2>
         <div class="card-content-area">
@@ -324,9 +286,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           6. Side Navigation Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardSideNav">
         <h2 class="card-header-title">Side Navigation</h2>
         <div class="card-content-area">
@@ -338,7 +297,6 @@
         </div>
       </div>
 
-      <!-- Offcanvas drawer elements -->
       <div id="offcanvasOverlay" class="offcanvas-overlay" onclick="closeSidenav()"></div>
       <div id="myOffcanvas" class="offcanvas-sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav()">&times;</a>
@@ -348,9 +306,6 @@
         <a href="javascript:void(0)">Contact</a>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           7. Fixed Sidebar Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardFixedSidebar">
         <h2 class="card-header-title">Fixed Sidebar</h2>
         <div class="card-content-area">
@@ -393,9 +348,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           8. Modal Box Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardModalBox">
         <h2 class="card-header-title">Modal Box</h2>
         <div class="card-content-area">
@@ -406,7 +358,6 @@
         </div>
       </div>
 
-      <!-- Teal Modal Window -->
       <div id="tealModal" class="modal" style="display: none;">
         <div class="modal-content" style="max-width: 520px;">
           <header class="teal-modal-header">
@@ -424,9 +375,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           9. Modal Image Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardModalImg">
         <h2 class="card-header-title">Modal Image</h2>
         <div class="card-content-area">
@@ -437,16 +385,12 @@
         </div>
       </div>
 
-      <!-- Modal Image Lightbox Window -->
       <div id="imgLightboxModal" class="img-lightbox-modal" style="display: none;">
         <span class="img-lightbox-close" onclick="closeImgModal()">&times;</span>
         <img class="img-lightbox-content" id="imgLightboxContent" alt="Full View">
         <div id="imgLightboxCaption" class="img-lightbox-caption"></div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           10. Lightbox Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardLightbox">
         <h2 class="card-header-title">Lightbox</h2>
         <div class="card-content-area">
@@ -461,7 +405,6 @@
         </div>
       </div>
 
-      <!-- Multi Lightbox Modal -->
       <div id="fullLightboxModal" class="full-lightbox-modal" style="display: none;">
         <span class="img-lightbox-close" onclick="closeLightboxGallery()">&times;</span>
         <div class="full-lightbox-container">
@@ -480,9 +423,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           11. Slideshow Gallery Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardSlideshowGallery">
         <h2 class="card-header-title">Slideshow Gallery</h2>
         <div class="card-content-area">
@@ -509,9 +449,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           12. Image Hover Overlay Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardImageHover">
         <h2 class="card-header-title">Image Hover Overlay</h2>
         <div class="card-content-area">
@@ -528,9 +465,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           13. Tabs Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardTabs">
         <h2 class="card-header-title">Tabs</h2>
         <div class="card-content-area">
@@ -558,9 +492,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           14. Vertical Tabs Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardVerticalTabs">
         <h2 class="card-header-title">Vertical Tabs</h2>
         <div class="card-content-area">
@@ -592,9 +523,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           15. Tab Image Gallery Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardTabGallery">
         <h2 class="card-header-title">Tab Image Gallery</h2>
         <div class="card-content-area">
@@ -615,9 +543,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           16. Alert Buttons Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardAlertButtons">
         <h2 class="card-header-title">Alert Buttons</h2>
         <div class="card-content-area">
@@ -634,9 +559,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           17. Outline Buttons Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardOutlineButtons">
         <h2 class="card-header-title">Outline Buttons</h2>
         <div class="card-content-area">
@@ -653,9 +575,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           18. Top Navigation Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardTopNav">
         <h2 class="card-header-title">Top Navigation</h2>
         <div class="card-content-area">
@@ -670,9 +589,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           19. Responsive Top Navigation Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardRespTopNav">
         <h2 class="card-header-title">Responsive Top Navigation</h2>
         <div class="card-content-area">
@@ -689,9 +605,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           20. Fullscreen Navigation Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardFullscreenNav">
         <h2 class="card-header-title">Fullscreen Navigation</h2>
         <div class="card-content-area">
@@ -703,7 +616,6 @@
         </div>
       </div>
 
-      <!-- Fullscreen Nav Overlay -->
       <div id="fullscreenNavOverlay" class="offcanvas-sidebar" style="transition:0.4s; text-align:center;">
         <a href="javascript:void(0)" class="closebtn" onclick="closeFullscreenNav()">&times;</a>
         <a href="javascript:void(0)">About</a>
@@ -712,9 +624,6 @@
         <a href="javascript:void(0)">Contact</a>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           21. Login Form in Navbar Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardLoginNavbar">
         <h2 class="card-header-title">Login Form in Navbar</h2>
         <div class="card-content-area">
@@ -736,9 +645,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           22. Change Background on Scroll Card
-           ------------------------------------------------------------------- -->
       <div class="w3-card-box" id="cardBgScroll">
         <h2 class="card-header-title">Change Background on Scroll</h2>
         <div class="card-content-area">
@@ -753,9 +659,6 @@
         </div>
       </div>
 
-      <!-- -------------------------------------------------------------------
-           Spaces Yellow Callout Box
-           ------------------------------------------------------------------- -->
       <div class="spaces-callout-yellow">
         <p class="spaces-callout-text">
           Ever heard about <b>W3Schools Spaces</b>? Here you can create your own website, or save your favorite code snippets.
@@ -765,7 +668,6 @@
         </a>
       </div>
 
-      <!-- Bottom Pagination Row -->
       <div class="pagination-row" style="justify-content: center; margin-bottom: 30px;">
         <span class="pagination-item">&lsaquo;</span>
         <span class="pagination-item active">1</span>
@@ -781,9 +683,6 @@
 
     </main>
 
-    <!-- ---------------------------------------------------------------------
-         Right Sticky Skyscraper Ad Banner
-         --------------------------------------------------------------------- -->
     <aside class="right-column">
       <div class="sticky-skyscraper">
         
@@ -812,22 +711,17 @@
 
   </div>
 
-  <!-- =========================================================================
-       5. ADVENTURE MODE & TRACK PROGRESS SECTION
-       ========================================================================= -->
   <div class="advb" id="adventureBanner">
 
-    <!-- 1. WORLD TERRAIN -->
     <span class="advb-field"></span>
     <span class="advb-road advb-road-top"></span>
     <span class="advb-road advb-road-mid"></span>
     <span class="advb-road advb-road-bot"></span>
 
-    <!-- 2. SCENERY STAGE (PROPS, CHEST & WALKER) -->
     <div class="advb-stage">
 
       <div class="advb-props">
-        <!-- treeline from the right -->
+        
         <img class="advb-prop" src="assets/oakTree.webp" alt="" style="right:24px;bottom:150px">
         <img class="advb-prop" src="assets/birchTree.webp" alt="" style="right:92px;bottom:158px">
         <img class="advb-prop" src="assets/oakTree.webp" alt="" style="right:166px;bottom:138px">
@@ -835,7 +729,6 @@
         <img class="advb-prop" src="assets/oakTree.webp" alt="" style="right:310px;bottom:112px">
         <img class="advb-prop" src="assets/bush.webp" alt="" style="right:390px;bottom:100px">
 
-        <!-- ground clutter along road -->
         <img class="advb-prop" src="assets/leaf.png" alt="" style="right:612px;bottom:36px">
         <img class="advb-prop" src="assets/oakTreeLog.webp" alt="" style="right:560px;bottom:10px">
         <img class="advb-prop" src="assets/leaf.png" alt="" style="right:500px;bottom:16px">
@@ -847,10 +740,8 @@
         <img class="advb-prop" src="assets/stone.webp" alt="" style="right:74px;bottom:12px">
       </div>
 
-      <!-- Wooden Signpost -->
       <img class="advb-sign" src="assets/adventure_sign.webp" alt="This way to the W3Schools Adventure app">
 
-      <!-- Interactive Treasure Chest: opens on hover, bursts gold coins -->
       <span class="advb-chest" id="advbChest" title="Open the Treasure Chest!">
         <span class="advb-chest-glow"></span>
         <span class="advb-coin" style="--x:-26px;--y:-30px;--d:0s"></span>
@@ -864,7 +755,6 @@
         <img class="advb-chest-lid" src="assets/chest.webp" alt="Lid">
       </span>
 
-      <!-- THE WALKER (Cat Mascot Lynx + Speech Bubble) -->
       <div class="advb-walk">
         <img class="advb-lynx" src="assets/lynx-7.webp" alt="Lynx Mascot">
         <a class="advb-bubble ga-bottom ga-adventure-learnmore" href="https://www.w3schools.com/adventure/" target="_blank"
@@ -875,13 +765,11 @@
 
     </div>
 
-    <!-- Atmosphere -->
     <span class="advb-wash"></span>
     <span class="advb-mist"></span>
 
-    <!-- 3. INNER CONTENT (TRACK PROGRESS CARD & APP INFO) -->
     <div class="advb-inner">
-      <!-- LEFT: Floating Track Progress Card -->
+      
       <section class="advb-left">
         <div class="advb-card">
           <p class="advb-kicker">Free account</p>
@@ -898,7 +786,6 @@
         </div>
       </section>
 
-      <!-- RIGHT: App Details, Store Badges, & Skin Selector -->
       <section class="advb-right">
         <p class="advb-kicker">New</p>
         <h2 class="advb-title">
@@ -911,7 +798,7 @@
 
         <div class="advb-cta">
           <div class="advb-badges">
-            <!-- App Store SVG Badge -->
+            
             <a href="https://apps.apple.com/us/app/w3schools/id6770531503" target="_blank" title="Get W3Schools Adventure App on App Store">
               <svg class="advb-badge" viewBox="0 0 216 64" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="214" height="62" rx="12" fill="#000"/>
@@ -923,7 +810,6 @@
               </svg>
             </a>
 
-            <!-- Google Play SVG Badge -->
             <a href="https://play.google.com/store/apps/details?id=com.w3schools.app.prod" target="_blank" title="Get W3Schools Adventure App on Google Play">
               <svg class="advb-badge" viewBox="0 0 216 64" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="214" height="62" rx="12" fill="#000"/>
@@ -938,7 +824,6 @@
               </svg>
             </a>
 
-            <!-- Browser SVG Badge -->
             <a href="https://app.w3schools.com/" target="_blank" title="Try W3Schools Adventure Mode in your browser">
               <svg class="advb-badge advb-badge-browser" viewBox="0 0 216 64" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="214" height="62" rx="12" fill="#000"/>
@@ -959,9 +844,6 @@
 
   </div>
 
-  <!-- =========================================================================
-       6. GLOBAL DARK FOOTER
-       ========================================================================= -->
   <footer id="w3-global-footer">
     <div class="footer-top-nav">
       <a href="https://www.w3schools.com" class="footer-logo-link" title="W3Schools Home">

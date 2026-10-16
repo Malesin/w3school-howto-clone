@@ -1,12 +1,4 @@
-/* ==========================================================================
-   W3Schools How TO - Exact Clone JavaScript
-   All interactive demo components matching screenshots
-   ========================================================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
-  // -------------------------------------------------------------------------
-  // 1. Mobile Sidebar Toggle
-  // -------------------------------------------------------------------------
   const mobileToggle = document.getElementById("mobileToggle");
   const sidenav = document.getElementById("sidenav");
 
@@ -23,9 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // -------------------------------------------------------------------------
-  // 2. Sidenav Filter Search
-  // -------------------------------------------------------------------------
   const sidenavFilter = document.getElementById("sidenavFilter");
   if (sidenavFilter) {
     sidenavFilter.addEventListener("input", function () {
@@ -48,9 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // -------------------------------------------------------------------------
-  // 3. Component 1: Slideshow
-  // -------------------------------------------------------------------------
   let currentSlideIdx = 1;
   const slideImgs = document.querySelectorAll(".slideshow-img");
   const slideDots = document.querySelectorAll(".slide-dot");
@@ -90,9 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   showSlide(currentSlideIdx);
 
-  // -------------------------------------------------------------------------
-  // 4. Component 2: Login Modal
-  // -------------------------------------------------------------------------
   const loginModal = document.getElementById("loginModal");
   window.openLoginModal = function () {
     if (loginModal) loginModal.style.display = "block";
@@ -101,9 +84,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (loginModal) loginModal.style.display = "none";
   };
 
-  // -------------------------------------------------------------------------
-  // 5. Component 3: Accordion
-  // -------------------------------------------------------------------------
   const accButtons = document.querySelectorAll(".acc-button");
   accButtons.forEach((btn) => {
     btn.addEventListener("click", function () {
@@ -121,17 +101,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // -------------------------------------------------------------------------
-  // 6. Component 5: Click Dropdown
-  // -------------------------------------------------------------------------
   window.toggleClickDropdown = function () {
     const flyout = document.getElementById("clickDropdownMenu");
     if (flyout) flyout.classList.toggle("show-click");
   };
 
-  // -------------------------------------------------------------------------
-  // 7. Component 6: Offcanvas Sidenav
-  // -------------------------------------------------------------------------
   const offcanvas = document.getElementById("myOffcanvas");
   const offcanvasOverlay = document.getElementById("offcanvasOverlay");
 
@@ -161,9 +135,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
-  // -------------------------------------------------------------------------
-  // 8. Component 8: Modal Box (Teal)
-  // -------------------------------------------------------------------------
   const tealModal = document.getElementById("tealModal");
   window.openTealModal = function () {
     if (tealModal) tealModal.style.display = "block";
@@ -172,9 +143,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (tealModal) tealModal.style.display = "none";
   };
 
-  // -------------------------------------------------------------------------
-  // 9. Component 9: Modal Image Lightbox
-  // -------------------------------------------------------------------------
   const imgModal = document.getElementById("imgLightboxModal");
   const modalImg = document.getElementById("imgLightboxContent");
   const captionText = document.getElementById("imgLightboxCaption");
@@ -191,9 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (imgModal) imgModal.style.display = "none";
   };
 
-  // -------------------------------------------------------------------------
-  // 10. Component 10: Multi-Image Lightbox
-  // -------------------------------------------------------------------------
   let fullLightboxIdx = 1;
   const fullLightboxModal = document.getElementById("fullLightboxModal");
 
@@ -236,9 +201,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // -------------------------------------------------------------------------
-  // 11. Component 11: Slideshow Gallery
-  // -------------------------------------------------------------------------
   let galleryIdx = 1;
   const galleryMainImg = document.getElementById("galleryMainImg");
   const galleryNum = document.getElementById("galleryNum");
@@ -272,9 +234,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
 
-  // -------------------------------------------------------------------------
-  // 12. Component 13: Horizontal Tabs
-  // -------------------------------------------------------------------------
   window.openCityTab = function (evt, cityName) {
     const tabPanels = document.querySelectorAll(".tab-city-panel");
     const tabButtons = document.querySelectorAll(".tab-link-btn");
@@ -287,9 +246,6 @@ document.addEventListener("DOMContentLoaded", function () {
     evt.currentTarget.classList.add("active");
   };
 
-  // -------------------------------------------------------------------------
-  // 13. Component 14: Vertical Tabs
-  // -------------------------------------------------------------------------
   window.openVerticalCity = function (evt, cityName) {
     const vPanels = document.querySelectorAll(".vtab-city-panel");
     const vButtons = document.querySelectorAll(".vtab-btn");
@@ -302,9 +258,6 @@ document.addEventListener("DOMContentLoaded", function () {
     evt.currentTarget.classList.add("active");
   };
 
-  // -------------------------------------------------------------------------
-  // 14. Component 15: Tab Image Gallery
-  // -------------------------------------------------------------------------
   const expandedImg = document.getElementById("tabGalleryExpandedImg");
   const expandedCaption = document.getElementById("tabGalleryCaption");
   const expandedWrap = document.getElementById("tabGalleryExpanded");
@@ -321,9 +274,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (expandedWrap) expandedWrap.style.display = "none";
   };
 
-  // -------------------------------------------------------------------------
-  // 15. Component 20: Fullscreen Navigation
-  // -------------------------------------------------------------------------
   const fullscreenNav = document.getElementById("fullscreenNavOverlay");
   window.openFullscreenNavRight = function () {
     if (fullscreenNav) {
@@ -343,9 +293,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (fullscreenNav) fullscreenNav.style.width = "0%";
   };
 
-  // -------------------------------------------------------------------------
-  // 16. Component 22: Background on Scroll
-  // -------------------------------------------------------------------------
   const scrollBgBox = document.getElementById("scrollBgContainer");
   const scrollBgScene = document.getElementById("scrollBgScene");
   if (scrollBgBox && scrollBgScene) {
@@ -358,9 +305,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // -------------------------------------------------------------------------
-  // 17. Outside Click Listener for Modals & Dropdowns
-  // -------------------------------------------------------------------------
   window.addEventListener("click", function (event) {
     if (!event.target.matches(".btn-click-blue")) {
       const clickMenu = document.getElementById("clickDropdownMenu");
@@ -374,9 +318,6 @@ document.addEventListener("DOMContentLoaded", function () {
     if (event.target === fullLightboxModal) fullLightboxModal.style.display = "none";
   });
 
-  // -------------------------------------------------------------------------
-  // 18. Adventure Mode: Interactive Chest (Grant XP on click)
-  // -------------------------------------------------------------------------
   const chest = document.getElementById("advbChest");
   if (chest) {
     chest.addEventListener("click", function () {
@@ -388,4 +329,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-

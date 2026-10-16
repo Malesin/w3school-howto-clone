@@ -1,8 +1,3 @@
-/* ==========================================================================
-   W3Schools How TO - Exact Clone Stylesheet
-   Pixel-perfect match to official W3Schools screenshots
-   ========================================================================== */
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -55,9 +50,6 @@ a {
   text-decoration: none;
 }
 
-/* ==========================================================================
-   1. TOP NAVIGATION BAR (#top-nav-bar)
-   ========================================================================== */
 #top-nav-bar {
   position: fixed;
   top: 0;
@@ -94,7 +86,6 @@ body.darktheme #top-nav-bar {
   margin-right: 10px;
 }
 
-/* Logo */
 .tnb-logo {
   display: flex;
   align-items: center;
@@ -116,7 +107,6 @@ body.darktheme #top-nav-bar {
   transform: scale(1.02);
 }
 
-/* Top Nav Links */
 .tnb-nav-items {
   display: flex;
   align-items: center;
@@ -144,7 +134,6 @@ body.darktheme #top-nav-bar {
   font-size: 12px;
 }
 
-/* Search Field */
 .tnb-search-wrap {
   position: relative;
   display: flex;
@@ -191,7 +180,6 @@ body.darktheme .tnb-search-input {
   cursor: pointer;
 }
 
-/* Right Section */
 .tnb-right {
   display: flex;
   align-items: center;
@@ -214,7 +202,6 @@ body.darktheme .tnb-text-link:hover {
   background-color: #2b3945;
 }
 
-/* Adventure App Badge */
 .tnb-adventure-badge {
   display: flex;
   align-items: center;
@@ -301,9 +288,6 @@ body.darktheme .badge-text-sub {
   background-color: var(--w3-green-hover);
 }
 
-/* ==========================================================================
-   2. SUB TOP NAVIGATION BAR (#subtopnav)
-   ========================================================================== */
 #subtopnav-container {
   position: fixed;
   top: 56px;
@@ -364,9 +348,6 @@ body.darktheme #subtopnav a.active {
   font-size: 14px;
 }
 
-/* ==========================================================================
-   3. LEFT SIDEBAR (#sidenav)
-   ========================================================================== */
 #sidenav {
   position: fixed;
   top: 90px;
@@ -445,9 +426,6 @@ body.darktheme .sidenav-links a.active {
   color: #fff;
 }
 
-/* ==========================================================================
-   4. MAIN WRAPPER & RIGHT SKYSCRAPER BANNER
-   ========================================================================== */
 .page-layout-wrapper {
   margin-left: 230px;
   margin-top: 90px;
@@ -468,7 +446,6 @@ body.darktheme .sidenav-links a.active {
   padding: 24px 24px 24px 4px;
 }
 
-/* Right Sticky Banner */
 .sticky-skyscraper {
   position: sticky;
   top: 100px;
@@ -550,9 +527,6 @@ body.darktheme .right-social-icons {
   color: #aaa;
 }
 
-/* ==========================================================================
-   5. MAIN HEADER & PAGINATION
-   ========================================================================== */
 .main-header-row {
   display: flex;
   justify-content: space-between;
@@ -592,7 +566,6 @@ body.darktheme .share-icon-btn {
   color: #fff;
 }
 
-/* Pagination Row */
 .pagination-row {
   display: flex;
   align-items: center;
@@ -621,9 +594,6 @@ body.darktheme .share-icon-btn {
   margin-bottom: 24px;
 }
 
-/* ==========================================================================
-   6. W3-CARD STYLING
-   ========================================================================== */
 .w3-card-box {
   background-color: var(--w3-card-bg);
   box-shadow: 0 4px 10px 0 rgba(0,0,0,0.08);
@@ -673,11 +643,6 @@ body.darktheme .share-icon-btn {
   background-color: var(--w3-green-hover);
 }
 
-/* ==========================================================================
-   7. DEMO COMPONENTS
-   ========================================================================== */
-
-/* 1. Slideshow */
 .slideshow-frame {
   position: relative;
   width: 100%;
@@ -753,7 +718,6 @@ body.darktheme .share-icon-btn {
   background-color: #717171;
 }
 
-/* 2. Login Form */
 .btn-login-blue {
   background-color: var(--w3-blue);
   color: #fff;
@@ -764,7 +728,6 @@ body.darktheme .share-icon-btn {
   border-radius: 2px;
 }
 
-/* Modal Popup Window (Universal) */
 .modal {
   display: none;
   position: fixed;
@@ -919,7 +882,6 @@ body.darktheme .modal-footer {
   color: #fff !important;
 }
 
-/* 3. Accordion */
 .acc-button {
   background-color: #d1d5db;
   color: #000;
@@ -958,7 +920,6 @@ body.darktheme .acc-panel {
   max-height: 200px;
 }
 
-/* 4 & 5. Dropdowns */
 .btn-hover-orange {
   background-color: var(--w3-orange);
   color: #fff;
@@ -1020,7 +981,6 @@ body.darktheme .dropdown-flyout a:hover {
   display: block;
 }
 
-/* 6. Side Navigation */
 .btn-sidenav-black {
   display: block;
   background-color: #000;
@@ -1033,7 +993,6 @@ body.darktheme .dropdown-flyout a:hover {
   border-radius: 2px;
 }
 
-/* 7. Fixed Sidebar */
 .fixed-sidebar-comparison {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1094,7 +1053,6 @@ body.darktheme .preview-body {
   margin-bottom: 6px;
 }
 
-/* 8. Modal Box */
 .btn-open-teal {
   background-color: var(--w3-teal);
   color: #fff;
@@ -1145,7 +1103,6 @@ body.darktheme .preview-body {
   font-weight: 500;
 }
 
-/* 9. Modal Image */
 .modal-img-thumb {
   width: 320px;
   max-width: 100%;
@@ -1212,7 +1169,6 @@ body.darktheme .preview-body {
   color: #04AA6D;
 }
 
-/* 10. Lightbox Gallery */
 .lightbox-3col-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1308,7 +1264,6 @@ body.darktheme .preview-body {
   font-weight: 500;
 }
 
-/* 11. Slideshow Gallery */
 .slideshow-gallery-container {
   max-width: 100%;
   background: #000;
@@ -1345,7 +1300,6 @@ body.darktheme .preview-body {
   opacity: 1;
 }
 
-/* 12. Image Hover Overlay */
 .overlay-demo-box {
   position: relative;
   max-width: 400px;
@@ -1375,7 +1329,6 @@ body.darktheme .preview-body {
   opacity: 1;
 }
 
-/* 13. Tabs */
 .tabs-nav-bar {
   display: flex;
   background-color: #f1f1f1;
@@ -1418,7 +1371,6 @@ body.darktheme .tab-content-panel {
   border-color: #38444d;
 }
 
-/* 14. Vertical Tabs */
 .vertical-tabs-layout {
   display: flex;
   border: 1px solid #ccc;
@@ -1470,7 +1422,6 @@ body.darktheme .vertical-tabs-body {
   background-color: #1d2a35;
 }
 
-/* 15. Tab Image Gallery */
 .tab-gallery-thumbs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1523,7 +1474,6 @@ body.darktheme .vertical-tabs-body {
   text-shadow: 1px 1px 3px #000;
 }
 
-/* 16 & 17. Alert & Outline Buttons */
 .button-row {
   display: flex;
   flex-wrap: wrap;
@@ -1560,7 +1510,6 @@ body.darktheme .vertical-tabs-body {
 .btn-outline.danger { border: 2px solid #f44336; color: #f44336; }
 .btn-outline.default { border: 2px solid #ccc; color: #666; }
 
-/* 18 & 19. Top Navigation & Responsive Topnav */
 .demo-top-navbar {
   background-color: #000000;
   overflow: hidden;
@@ -1604,7 +1553,6 @@ body.darktheme .vertical-tabs-body {
   color: black;
 }
 
-/* 20. Fullscreen Navigation */
 .btn-full-black {
   background-color: #000;
   color: #fff;
@@ -1624,7 +1572,6 @@ body.darktheme .vertical-tabs-body {
   border-radius: 2px;
 }
 
-/* 21. Login Form in Navbar */
 .navbar-login-row {
   display: flex;
   justify-content: space-between;
@@ -1681,7 +1628,6 @@ body.darktheme .navbar-login-links a {
   border-radius: 2px;
 }
 
-/* 22. Change Background on Scroll */
 .scroll-bg-container {
   height: 280px;
   overflow-y: scroll;
@@ -1713,9 +1659,6 @@ body.darktheme .navbar-login-links a {
   letter-spacing: 2px;
 }
 
-/* ==========================================================================
-   8. SPACES CALLOUT & ADVENTURE BANNER
-   ========================================================================== */
 .spaces-callout-yellow {
   background-color: var(--w3-yellow-callout);
   border-radius: 4px;
@@ -1743,9 +1686,6 @@ body.darktheme .spaces-callout-text {
   font-size: 15px;
 }
 
-/* ==========================================================================
-   8. ADVENTURE MODE BANNER (.advb)
-   ========================================================================== */
 .advb {
   --far: #DCE9EF;
   position: relative;
@@ -1770,7 +1710,6 @@ body.darktheme .advb {
   box-sizing: border-box;
 }
 
-/* World Terrain */
 .advb-field {
   position: absolute;
   left: 0; right: 0; bottom: 0;
@@ -1820,7 +1759,6 @@ body.darktheme .advb-road {
   filter: brightness(0.7) saturate(0.85);
 }
 
-/* Props & Stage */
 .advb-stage {
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
@@ -1883,7 +1821,6 @@ body.darktheme .advb-mist {
   filter: drop-shadow(0 6px 10px rgba(20,40,24,.22));
 }
 
-/* Treasure Chest */
 .advb-chest {
   position: absolute;
   right: 24px;
@@ -1958,13 +1895,6 @@ body.darktheme .advb-mist {
   100% { opacity: 0; transform: translate(var(--x), var(--y)) scale(1); }
 }
 
-/* =========================================================
-   THE WALKER
-   The lynx walks the road carrying the bubble. Slow and
-   short so the link stays easy to hit, paused on hover, off
-   entirely on reduced motion.
-   ========================================================= */
-
 .advb-walk {
   position: absolute;
   z-index: 9;
@@ -2027,7 +1957,6 @@ body.darktheme .advb-mist {
 
 .advb-bubble:hover { background: #FFF4A3; }
 
-/* tail: dark diamond behind, white diamond over the border */
 .advb-bubble::before,
 .advb-bubble::after {
   content: "";
@@ -2056,7 +1985,6 @@ body.darktheme .advb-mist {
   margin-left: 5px;
 }
 
-/* Inner Layout Columns */
 .advb-inner {
   position: relative;
   z-index: 8;
@@ -2083,7 +2011,6 @@ body.darktheme .advb-mist {
   pointer-events: auto;
 }
 
-/* Card */
 .advb-card {
   width: 212px;
   padding: 16px 14px 18px;
@@ -2197,7 +2124,6 @@ body.darktheme .advb-stat b {
   transform: translateY(-1px);
 }
 
-/* Copy */
 .advb-title {
   margin: 0;
   font-size: 26px;
@@ -2221,7 +2147,6 @@ body.darktheme .advb-text {
   color: #d1dde6;
 }
 
-/* Badges */
 .advb-badges {
   display: flex;
   align-items: center;
@@ -2245,8 +2170,6 @@ body.darktheme .advb-text {
   transform: translateY(-1px);
 }
 
-
-/* Responsive queries */
 @media (max-width: 992px) {
   .advb { height: 320px; }
   .advb-inner { padding: 18px 20px; }
@@ -2292,9 +2215,6 @@ body.darktheme .advb-text {
   .advb-lynx { animation: none !important; }
 }
 
-/* ==========================================================================
-   9. GLOBAL DARK FOOTER
-   ========================================================================== */
 #w3-global-footer {
   background-color: #282A35;
   color: #ffffff;
@@ -2415,9 +2335,6 @@ body.darktheme .advb-text {
   line-height: 1.6;
 }
 
-/* ==========================================================================
-   10. RESPONSIVE BREAKPOINTS
-   ========================================================================== */
 @media screen and (max-width: 1200px) {
   .right-column {
     display: none;
